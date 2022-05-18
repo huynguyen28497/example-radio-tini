@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "custom-radio": "components/custom-radio/index"
+  }
+}

@@ -1,11 +1,18 @@
 <view class="container">
-  <view class="block">
-    <radio-group class="radio-group" onChange="onChange">
-      <view class="radio" tiki:for="{{items}}" key="radio-{{index}}">
-        <radio value="{{item.value}}" checked="{{item.value === selected }}" />
-        <text class="text">{{item.name}}</text>
-      </view>
-    </radio-group>
-  </view>
+  <!-- <view class="block"> -->
+  <!--   <radio-group class="radio-group" onChange="onChange"> -->
+  <!--     <view class="radio" tiki:for="{{items}}" key="radio-{{index}}"> -->
+  <!--       <radio value="{{item.value}}" checked="{{item.value === selected }}" /> -->
+  <!--       <text class="text">{{item.name}} {{item.value === selected}}</text> -->
+  <!--     </view> -->
+  <!--   </radio-group> -->
+  <!-- </view> -->
+  <custom-radio 
+    tiki:for="{{items}}" 
+    value="{{item.value}}" 
+    text="{{item.name}}"
+    groupValue="{{groupValue}}"
+    onChange="onChangeCustom"
+  />
   <button onTap="onTap">Clear</button>
 </view>

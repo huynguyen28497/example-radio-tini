@@ -1,0 +1,28 @@
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.radio-item {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: solid 1px var(--gray40);
+  background: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.radio-dot {
+  background: var(--brand);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.checked {
+  border-color: var(--brand);
+}

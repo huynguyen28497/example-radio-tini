@@ -1,0 +1,6 @@
+<view class="radio-wrapper" onTap="onTap">
+  <view class="radio-item {{value === groupValue ? 'checked' : ''}}">
+    <view tiki:if="{{value === groupValue}}" class="radio-dot" />
+  </view>
+  <text>{{text}}</text>
+</view>

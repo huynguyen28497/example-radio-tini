@@ -9,17 +9,23 @@ Page({
       { name: "Backbone", value: "Backbone.js" },
     ],
     selected: "",
+    groupValue: '',
   },
   onTap() {
     this.setData({
       selected: "",
+      groupValue: '',
     });
-    console.log("====Selected====", this.data.selected);
+    // console.log("====Selected====", this.data.selected);
   },
   onChange(event) {
     this.setData({
       selected: event.detail.value,
     });
-    console.log("====Selected==Change====", this.data.selected);
+    // console.log("====Selected==Change====", this.data.selected);
   },
+  onChangeCustom(value) {
+    console.log('value :>> ', value);
+    this.setData({ groupValue: value });
+  }
 });
